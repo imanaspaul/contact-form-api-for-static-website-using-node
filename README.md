@@ -1,6 +1,6 @@
 #### Conact form API for my static websites 
 
-[demo]("https://arcane-oasis-11980.herokuapp.com/")
+[demo](https://arcane-oasis-11980.herokuapp.com)
 
 ## how to use it.
 - clone the repo
