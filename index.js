@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
+var bodyParser = require('body-parser');
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+ 
+// parse application/json
+app.use(bodyParser.json());
 
 // routes
    
@@ -10,6 +16,12 @@ app.get('/', (req, res)=>{
         "status":200,
         "message": "Hello world the is working 🎉🎉🎉🎉"
     }));
+})
+
+app.post('/send', (req, res)=>{
+    console.log(req.body["name"])
+    res.status(200);
+    res.send("send")
 })
 
 // port 
