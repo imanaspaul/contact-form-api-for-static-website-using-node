@@ -19,7 +19,10 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/send', (req, res)=>{
-    console.log(req.body["name"])
+
+    // get the body elements
+    console.log(req.body["name"]);
+    // do whatever you want and then send the response based on that
     res.status(200);
     res.send("send")
 })
